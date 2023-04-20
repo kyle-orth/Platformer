@@ -1,5 +1,7 @@
+package GameElements;
+
 public class SolidPlatform extends StandablePlatform {
-    SolidPlatform(int x, int y, int w, int h) {
+    public SolidPlatform(int x, int y, int w, int h) {
         super(x, y, w, h);
     }
 

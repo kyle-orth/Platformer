@@ -1,8 +1,10 @@
+package GameElements;
+
 public class Tile {
     protected int X;
     protected int Y;
 
-    Tile(int x, int y) {
+    public Tile(int x, int y) {
         X = x;
         Y = y;
     }

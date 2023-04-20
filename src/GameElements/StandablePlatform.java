@@ -1,6 +1,8 @@
+package GameElements;
+
 public class StandablePlatform extends TileCollection{
 
-    StandablePlatform(int x, int y, int w, int h){
+    public StandablePlatform(int x, int y, int w, int h){
         super(x, y, w, h);
     }
     public boolean standing(Entity e) {

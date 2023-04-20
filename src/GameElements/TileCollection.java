@@ -1,3 +1,5 @@
+package GameElements;
+
 import java.util.ArrayList;
 
 public class TileCollection{
@@ -6,7 +8,7 @@ public class TileCollection{
     protected int width;
     protected int height;
     protected ArrayList<Tile> tileArr = new ArrayList<>();
-    TileCollection(int x, int y, int w, int h) {
+    public TileCollection(int x, int y, int w, int h) {
         X = x;
         Y = y;
         height = h;

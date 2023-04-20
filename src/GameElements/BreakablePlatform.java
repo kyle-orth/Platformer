@@ -1,5 +1,7 @@
+package GameElements;
+
 public class BreakablePlatform extends TileCollection{
-    BreakablePlatform(int x, int y, int w, int h){
+    public BreakablePlatform(int x, int y, int w, int h){
         super(x, y, w, h);
     }
 

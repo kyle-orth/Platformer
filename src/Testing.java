@@ -1,3 +1,7 @@
+import GameElements.BreakablePlatform;
+import GameElements.Tile;
+import GameElements.TileCollection;
+
 public class Testing {
     public static void main(String[] args) {
         int totalPassed = 0;
@@ -31,7 +35,7 @@ public class Testing {
         boolean passed;
         int passedCount = 0;
 
-        System.out.println("\n***TileCollection***");
+        System.out.println("\n***GameElements.TileCollection***");
 
         System.out.println("---toString()");
         passed = tc.toString().equals("(1, 3) to (3, 5)");
@@ -43,7 +47,7 @@ public class Testing {
         if (passed) passedCount++;
         System.out.println("\tCorrectly identifies coordinates: " + passed);
 
-        System.out.println("---contains(Tile t)");
+        System.out.println("---contains(GameElements.Tile t)");
         passed = tc.contains(new Tile(2, 3));
         if (passed) passedCount++;
         System.out.println("\tCorrectly identifies tile: " + passed);
@@ -74,9 +78,9 @@ public class Testing {
         boolean passed;
         int passedCount = 0;
 
-        System.out.println("\n***BreakablePlatform***");
+        System.out.println("\n***GameElements.BreakablePlatform***");
 
-        System.out.println("---destroyTile(Tile t)");
+        System.out.println("---destroyTile(GameElements.Tile t)");
         passed = !bp.destroyTile(t2);
         if(passed) passedCount++;
         System.out.println("\tIgnores out of bounds tile removal: " + passed);
