@@ -15,11 +15,34 @@ public class TileCollection{
         width = w;
         createTileSet();
     }
+    public TileCollection(int x, int y, int w, int h, boolean breakable) {
+        X = x;
+        Y = y;
+        height = h;
+        width = w;
+        if(breakable)
+            createBreakableTileSet();
+        else
+            createTileSet();
+    }
 
     private void createTileSet() {
         for (int row = 0; row < height; row++){
             for (int col = 0; col < width; col++) {
                 tileArr.add(new Tile(X + row, Y + col));
+            }
+        }
+    }
+
+    private void createBreakableTileSet() {
+        for (int row = 0; row < height; row++) {
+            for (int col = 0; col < width; col++) {
+                BreakableTile t = new BreakableTile(X+row, Y+col);
+                if(row == 0) {t.bottommost = true;}
+                if(row == height-1) {t.topmost = true;}
+                if(col == 0) {t.leftmost = true;}
+                if(col == width-1) {t.rightmost = true;}
+                tileArr.add(t);
             }
         }
     }

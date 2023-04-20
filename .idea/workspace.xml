@@ -4,16 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b46379f8-bbe9-4a6c-bd39-c303e191ff5d" name="Changes" comment="Platform structure established">
-      <change afterPath="$PROJECT_DIR$/src/GameElements/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Player.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/BreakablePlatform.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GameElements/BreakablePlatform.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GameElements/Entity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SolidPlatform.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GameElements/SolidPlatform.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/StandablePlatform.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GameElements/StandablePlatform.java" afterDir="false" />
+    <list default="true" id="b46379f8-bbe9-4a6c-bd39-c303e191ff5d" name="Changes" comment="Refactored into GameElements">
+      <change afterPath="$PROJECT_DIR$/src/GameElements/BreakableTile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GameElements/BreakablePlatform.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GameElements/BreakablePlatform.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GameElements/Tile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GameElements/Tile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GameElements/TileCollection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GameElements/TileCollection.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Testing.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Testing.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Tile.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GameElements/Tile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TileCollection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GameElements/TileCollection.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,6 +26,19 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="ca8dfce5-8e5a-493f-bd27-2ef097178f68" />
+        <option name="url" value="https://github.com/kyle-orth/Platformer.git" />
+      </UrlAndAccount>
+    </option>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -53,6 +63,20 @@
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="Platforms" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Testing" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Testing" />
+      <module name="Platformer" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Testing" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -105,7 +129,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681963892605</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Refactored into GameElements">
+      <created>1681965726304</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1681965726304</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -134,6 +165,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Tile building setup" />
     <MESSAGE value="Platform structure established" />
-    <option name="LAST_COMMIT_MESSAGE" value="Platform structure established" />
+    <MESSAGE value="Refactored into GameElements" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactored into GameElements" />
   </component>
 </project>

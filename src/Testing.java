@@ -73,17 +73,17 @@ public class Testing {
     private static int BreakablePlatform() {
         // Total Tests = 4
         BreakablePlatform bp = new BreakablePlatform(1, 3, 2, 2);
-        Tile t1 = new Tile(2, 3);
-        Tile t2 = new Tile(0, 0);
         boolean passed;
         int passedCount = 0;
 
         System.out.println("\n***GameElements.BreakablePlatform***");
 
         System.out.println("---destroyTile(GameElements.Tile t)");
-        passed = !bp.destroyTile(t2);
+        passed = !bp.destroyTile(new Tile(0, 0));
         if(passed) passedCount++;
         System.out.println("\tIgnores out of bounds tile removal: " + passed);
+
+        Tile t1 = new Tile(2, 3);
         passed = (bp.destroyTile(t1) && !bp.destroyTile(t1));
         if(passed) passedCount++;
         System.out.println("\tCorrectly removes in bounds tile: " + passed);
@@ -92,6 +92,7 @@ public class Testing {
         passed = !bp.destroyTile(0, 0);
         if(passed) passedCount++;
         System.out.println("\tIgnores out of bounds tile removal: " + passed);
+
         passed = (bp.destroyTile(1, 4) && !bp.destroyTile(1, 4));
         if (passed) passedCount++;
         System.out.println("\tCorrectly removes in bounds tile: " + passed);
