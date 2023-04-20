@@ -5,16 +5,16 @@ public class TileCollection{
     protected int Y;
     protected int width;
     protected int height;
-    private ArrayList<Tile> tileArr = new ArrayList<>();
+    protected ArrayList<Tile> tileArr = new ArrayList<>();
     TileCollection(int x, int y, int w, int h) {
         X = x;
         Y = y;
         height = h;
         width = w;
-        gatherTiles();
+        createTileSet();
     }
 
-    private void gatherTiles() {
+    private void createTileSet() {
         for (int row = 0; row < height; row++){
             for (int col = 0; col < width; col++) {
                 tileArr.add(new Tile(X + row, Y + col));
@@ -22,20 +22,18 @@ public class TileCollection{
         }
     }
 
-    public boolean standing(Entity e) {
-        for(Tile t : tileArr)
-            if(t.standing(e))
+    public boolean contains(int x, int y) {
+        for (Tile t : tileArr)
+            if(t.equals(new Tile(x, y)))
                 return true;
         return false;
     }
 
-    public boolean destroyTile(int x, int y) {
-        Tile t = new Tile(x, y);
-        return tileArr.remove(t);
-    }
-
-    public boolean destroyTile(Tile t) {
-        return tileArr.remove(t);
+    public boolean contains(Tile tile) {
+        for (Tile t : tileArr)
+            if(t.equals(tile))
+                return true;
+        return false;
     }
 
     public String tilesToString() {

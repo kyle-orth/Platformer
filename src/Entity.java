@@ -10,6 +10,8 @@ public class Entity{
         Y = y;
         width = w;
         height = h;
+        vY = 0;
+        vX = 0;
     }
 
     Entity(double x, double y, double w, double h, double vX, double vY) {
@@ -21,5 +23,15 @@ public class Entity{
     public void move() {
         X += vX;
         Y += vY;
+    }
+
+    public void setPos(int x, int y) {
+        X = x;
+        Y = y;
+    }
+
+    public void setVel(int vx, int vy) {
+        vX = vx;
+        vY = vy;
     }
 }
