@@ -42,9 +42,10 @@ public class Tile {
 
     @Override
     public boolean equals(Object obj) {
-        if (! (obj.getClass() == Tile.class))
-            return false;
-        return ((Tile)obj).X == X && ((Tile)obj).Y == Y;
+        if(Tile.class.isAssignableFrom(obj.getClass())) {
+            return ((Tile) obj).X == X && ((Tile) obj).Y == Y;
+        }
+        return false;
     }
 
     @Override
