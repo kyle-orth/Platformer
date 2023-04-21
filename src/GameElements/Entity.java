@@ -27,13 +27,18 @@ public class Entity{
         Y += vY;
     }
 
-    public void setPos(int x, int y) {
+    public void setPos(double x, double y) {
         X = x;
         Y = y;
     }
 
-    public void setVel(int vx, int vy) {
+    public void setVel(double vx, double vy) {
         vX = vx;
         vY = vy;
     }
+
+    public double getX() {return X;}
+    public double getY() {return Y;}
+    public double getvX() {return vX;}
+    public double getvY() {return vY;}
 }
