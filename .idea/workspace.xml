@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b46379f8-bbe9-4a6c-bd39-c303e191ff5d" name="Changes" comment="Entity tests">
-      <change afterPath="$PROJECT_DIR$/src/GameElements/Clock.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GameElements/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/GameElements/Player.java" afterDir="false" />
-    </list>
+    <list default="true" id="b46379f8-bbe9-4a6c-bd39-c303e191ff5d" name="Changes" comment="Entity tests" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -22,6 +18,7 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PUSH_AUTO_UPDATE" value="true" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
@@ -136,14 +133,7 @@
       <option name="project" value="LOCAL" />
       <updated>1682048972219</updated>
     </task>
-    <task id="LOCAL-00010" summary="Entity tests">
-      <created>1682049183881</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1682049183881</updated>
-    </task>
-    <option name="localTasksCounter" value="11" />
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -174,6 +164,7 @@
     <MESSAGE value="Platform structure established" />
     <MESSAGE value="Breakable collection constructor tests" />
     <MESSAGE value="Entity tests" />
-    <option name="LAST_COMMIT_MESSAGE" value="Entity tests" />
+    <MESSAGE value="Created the Clock class" />
+    <option name="LAST_COMMIT_MESSAGE" value="Created the Clock class" />
   </component>
 </project>
