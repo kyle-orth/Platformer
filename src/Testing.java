@@ -152,7 +152,7 @@ public class Testing {
     }
 
     private static void Entity() {
-        totalTestCount += 3;
+        totalTestCount += 2;
         System.out.println("\n***GameElements.Entity***");
         Entity e = new Entity(10.5, 2.8, 1.2, 2.4, 0.1, 0);
         e.setPos(5.5, 3.8);
@@ -167,12 +167,6 @@ public class Testing {
         passed = e.getvX() == 0.5 && e.getvY() == 0.08;
         if (passed) totalPassedCount++;
         System.out.println("\tProperly sets the velocity: " + passed);
-
-        System.out.println("---move()");
-        e.move(1000);
-        passed = e.getX() == 6.0 && e.getY() == 3.88;
-        if (passed) totalPassedCount++;
-        System.out.println("\tProperly updates the position: " + passed);
 
         System.out.println();
     }

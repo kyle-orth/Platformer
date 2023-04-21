@@ -1,8 +1,7 @@
 package GameElements;
 
 /**
- * Entity stores an entity's size, position, and velocity. move() moves the entity based on its
- * current velocity, magnified by the amount of time that has passed since the last call.
+ * Entity stores an entity's size, position, and velocity.
  */
 public class Entity{
     protected double X;
@@ -24,11 +23,6 @@ public class Entity{
         this(x, y, w, h);
         this.vX = vX;
         this.vY = vY;
-    }
-
-    public void move(long milliseconds) {
-        X += vX*(milliseconds/1000.0);
-        Y += vY*(milliseconds/1000.0);
     }
 
     public void setPos(double x, double y) {

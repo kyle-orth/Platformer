@@ -4,7 +4,6 @@ package GameElements;
  * Player is an Entity that can jump, and has variable size and jump power.
  */
 public class Player extends Entity {
-    private static final double GRAVITY_CONST = 1;
     protected double jumpPower;
 
     public Player(int x, int y, double width, double height, double jumpPower) {
@@ -18,11 +17,7 @@ public class Player extends Entity {
     public Player(int x, int y, double jumpPower) {this(x, y, 0.7, 1.2, jumpPower);}
 
     public void jump() {
-        vY = 3;
-    }
-
-    public void gravity() {
-        vY -= GRAVITY_CONST;
+        vY = jumpPower;
     }
 
     public void setJumpPower(double jumpPower) { this.jumpPower = jumpPower;}
