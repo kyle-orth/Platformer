@@ -1,5 +1,8 @@
 package GameElements;
 
+/**
+ * SolidPlatform is a TileCollection with collision testing on all four sides.
+ */
 public class SolidPlatform extends StandablePlatform {
     public SolidPlatform(int x, int y, int w, int h) {
         super(x, y, w, h);

@@ -2,6 +2,11 @@ package GameElements;
 
 import java.util.ArrayList;
 
+/**
+ * Clock is a time handling class that should be used for consistent game physics.
+ * tick() returns the time since its' last call, and tick(int fps) limits the frame rate.
+ * framerate() returns the average frame rate based on the previous 10 calls.
+ */
 public class Clock {
     private long startTime;
     private long tick;

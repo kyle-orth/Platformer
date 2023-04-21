@@ -169,7 +169,7 @@ public class Testing {
         System.out.println("\tProperly sets the velocity: " + passed);
 
         System.out.println("---move()");
-        e.move();
+        e.move(1000);
         passed = e.getX() == 6.0 && e.getY() == 3.88;
         if (passed) totalPassedCount++;
         System.out.println("\tProperly updates the position: " + passed);

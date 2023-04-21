@@ -1,5 +1,10 @@
 package GameElements;
 
+/**
+ * The Tile class holds a 1x1 tile at a given location.
+ * It has the capability to test collisions with Entities on all four sides.
+ * The equals method returns true if another Tile has the same coordinates.
+ */
 public class Tile {
     protected int X;
     protected int Y;

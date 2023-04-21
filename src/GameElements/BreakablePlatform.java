@@ -1,6 +1,15 @@
 package GameElements;
 
+/**
+ * BreakablePlatform is a collection of BreakableTiles, with its own unique collision testing for
+ * non-rectangular platform shapes.
+ * Destroying specific tiles and then changing breakable to false allows for unbreakable non-rectangular
+ * platforms with proper collision testing.
+ */
 public class BreakablePlatform extends TileCollection{
+
+    private boolean breakable = true;
+
     public BreakablePlatform(int x, int y, int w, int h){
         super(x, y, w, h, true);
     }
@@ -24,7 +33,13 @@ public class BreakablePlatform extends TileCollection{
                 ((BreakableTile)t).leftmost = true;
         }
     }
+
+    public void setBreakable(boolean breakable) {this.breakable = breakable;}
+
+    public boolean breakable() {return breakable;}
+
     public boolean destroyTile(int x, int y) {
+        if (!breakable) return false;
         Tile t = new Tile(x, y);
         for (int i = 0; i < tileArr.size(); i++) {
             if (t.equals(tileArr.get(i))) {
@@ -37,6 +52,7 @@ public class BreakablePlatform extends TileCollection{
     }
 
     public boolean destroyTile(Tile t) {
+        if (!breakable) return false;
         t = new Tile(t.X, t.Y);
         for (int i = 0; i < tileArr.size(); i++) {
             if (t.equals(tileArr.get(i))) {

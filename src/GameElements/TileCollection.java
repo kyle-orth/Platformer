@@ -2,6 +2,11 @@ package GameElements;
 
 import java.util.ArrayList;
 
+/**
+ * TileCollection stores an array of Tiles (or BreakableTiles) in a rectangular shape.
+ * The contains method returns whether a Tile with the specified coordinates is in the collection.
+ * Shape can be changed using the subclass BreakablePlatform.
+ */
 public class TileCollection{
     protected int X;
     protected int Y;

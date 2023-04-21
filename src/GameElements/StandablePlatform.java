@@ -1,5 +1,8 @@
 package GameElements;
 
+/**
+ * StandablePlatform is a TileCollection with collision testing on the top layer only.
+ */
 public class StandablePlatform extends TileCollection{
 
     public StandablePlatform(int x, int y, int w, int h){
