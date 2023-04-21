@@ -47,6 +47,8 @@ public class TileCollection{
         }
     }
 
+    public ArrayList<Tile> getTileArr() { return tileArr;}
+
     public boolean contains(int x, int y) {
         for (Tile t : tileArr)
             if(t.equals(new Tile(x, y)))

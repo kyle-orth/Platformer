@@ -2,6 +2,7 @@ import GameElements.BreakablePlatform;
 import GameElements.BreakableTile;
 import GameElements.Tile;
 import GameElements.TileCollection;
+import java.util.ArrayList;
 
 public class Testing {
     public static void main(String[] args) {
@@ -10,13 +11,13 @@ public class Testing {
         System.out.println("Test Cases [Platformer]:");
 
         totalPassed += GameElements();
-        totalTestCount += 11;
+        totalTestCount += 12;
 
         System.out.println("Total [Platformer]: " + totalPassed + " passed of " + totalTestCount);
     }
 
     private static int GameElements() {
-        // Total Tests = 11
+        // Total Tests = 12
         int totalPassed = 0;
         int totalTestCount = 0;
         System.out.println("\nTests for GameElements:");
@@ -28,13 +29,13 @@ public class Testing {
         //totalTestCount += 0;
 
         totalPassed += TileCollection();
-        totalTestCount += 4;
+        totalTestCount += 5;
 
         totalPassed += StandablePlatform();
-        totalTestCount += 0;
+        //totalTestCount += 0;
 
         totalPassed += SolidPlatform();
-        totalTestCount += 0;
+        //totalTestCount += 0;
 
         totalPassed += BreakablePlatform();
         totalTestCount += 4;
@@ -70,21 +71,30 @@ public class Testing {
 
     private static int BreakableTile() {
         // Total Tests = 0
-        // boolean passed;
-        // int passedCount = 0;
+        //boolean passed;
+        int passedCount = 0;
         System.out.println("\n***GameElements.BreakableTile***");
         System.out.println("\tCurrently tested in the Tile tests");
 
         System.out.println();
-        return 0;
+        return passedCount;
     }
 
     private static int TileCollection() {
-        // Total Tests = 4
+        // Total Tests = 5
         TileCollection tc = new TileCollection(1, 3, 2, 2);
+        ArrayList<Tile> btc = new TileCollection(0, 0, 2, 3, true).getTileArr();
         boolean passed;
         int passedCount = 0;
         System.out.println("\n***GameElements.TileCollection***");
+
+        System.out.println("---Constructor, breakable=true");
+        BreakableTile b1 = (BreakableTile) btc.get(0);
+        BreakableTile b2 = (BreakableTile) btc.get(5);
+        passed = (b1.bottommost && b1.leftmost && !b1.rightmost && !b1.topmost
+                    && b2.topmost && b2.rightmost && !b2.leftmost && !b2.bottommost);
+        if (passed) passedCount++;
+        System.out.println("\tCorrect initial position values: " + passed);
 
         System.out.println("---toString()");
         passed = tc.toString().equals("(1, 3) to (3, 5)");
@@ -112,7 +122,7 @@ public class Testing {
     }
 
     private static int StandablePlatform() {
-        boolean passed;
+        //boolean passed;
         int passedCount = 0;
         System.out.println("\n***GameElements.StandablePlatform***");
 
@@ -124,7 +134,7 @@ public class Testing {
     }
 
     private static int SolidPlatform() {
-        boolean passed;
+        //boolean passed;
         int passedCount = 0;
         System.out.println("\n***GameElements.SolidPlatform***");
 
