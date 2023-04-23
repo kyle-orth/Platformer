@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b46379f8-bbe9-4a6c-bd39-c303e191ff5d" name="Changes" comment="Clarified documentation">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PhysicsEngine/Movement.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/PhysicsEngine/Movement.java" afterDir="false" />
-    </list>
+    <list default="true" id="b46379f8-bbe9-4a6c-bd39-c303e191ff5d" name="Changes" comment="Vertical acceleration implemented, need horizontal" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -170,7 +167,28 @@
       <option name="project" value="LOCAL" />
       <updated>1682100327166</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Vertical acceleration implemented, need horizontal">
+      <created>1682226473486</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1682226473486</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Vertical acceleration implemented, need horizontal">
+      <created>1682226511293</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1682226511293</updated>
+    </task>
+    <task id="LOCAL-00014" summary="Vertical acceleration implemented, need horizontal">
+      <created>1682228923049</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1682228923049</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -204,6 +222,7 @@
     <MESSAGE value="Created the Clock class" />
     <MESSAGE value="Merge remote-tracking branch 'origin/master'&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml" />
     <MESSAGE value="Clarified documentation" />
-    <option name="LAST_COMMIT_MESSAGE" value="Clarified documentation" />
+    <MESSAGE value="Vertical acceleration implemented, need horizontal" />
+    <option name="LAST_COMMIT_MESSAGE" value="Vertical acceleration implemented, need horizontal" />
   </component>
 </project>
