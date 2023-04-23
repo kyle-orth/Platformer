@@ -9,6 +9,7 @@ import GameElements.Entity;
 public class Movement {
     private static final double GRAV_CONST = 9.88;
     private static final double MAX_FREE_FALL = -55.55;
+    private static final double FRICTION_EFFECT = 0.5;
 
     public static void move(Entity e, long milliseconds) {
         double x = e.getX() + e.getvX()*milliseconds/1000.0;
@@ -26,5 +27,13 @@ public class Movement {
         double acc = gravModifier*GRAV_CONST*milliseconds/1000.0;
         double newvY = Math.max(e.getvY() - acc, Math.pow(gravModifier, 2)*MAX_FREE_FALL);
         e.setVel(e.getvX(), newvY);
+    }
+
+    public static void applyFriction(Entity e, long milliseconds) {
+        double friction = Math.max(e.getvX()/(1.0 + FRICTION_EFFECT), Math.exp(Math.pow(e.getvX(), 2)*milliseconds));
+        double newvX = Math.max(e.getvX() - friction - FRICTION_EFFECT*(1000.0/milliseconds), 0);
+        if (e.getvX() < 0)
+            newvX *= -1;
+        e.setVel(newvX, e.getvY());
     }
 }
